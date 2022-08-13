@@ -95,9 +95,25 @@ h2 {
     font-size: 1.2vw;
 }
 
-.resume-options a{
+.resume-options a {
     text-decoration: none;
     font-size: 1vw;
+}
+
+.center {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.project-table, td {
+    border: 1px solid white;   
+    border-spacing: 5px;
+    padding: 10px;
+}
+
+td {
+    background-color: #b9ffee;
+    font-size: 0.8vw;
 }
 
 /* Footer Style */
