@@ -37,41 +37,67 @@ h1 {
     transition: ease-in-out 0.5s;
 }
 
-/* Body and Nav Style */
+/* Body Style */
 body {
+    min-width: 325px;
     background: #FFFFFF;
-    margin:  2px;
-    padding: 0px;
     font-family: 'Inconsolata', monospace;
-    font-size: large;
     box-sizing: border-box;
 }
 
-header {
-    position: relative;
-    left: 0px;
-    top: 0px;
-    width: 100%;
-    height: 10vh;
-}
-
-header h2 {
-    color: #414141;
-    font-size: 1.8rem;
-    padding-top: 15px;
-}
-
-nav a {
+/* Nav and Header Style */
+h2 {
     color: #FF686B;
+    font-size: 1.7vw;
+    text-align: center;
 }
 
-nav a:hover {
-    font-size: larger;
+.nav {
+    text-align: center;
+}
+
+.nav-link {
+    margin: 1vw;
+    font-size: 1.2vw;
+    text-decoration: none;
+}
+
+.nav-link:hover {
+    color: #84DCC6;
+}
+
+/* All Content below Nav */
+.content {
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+/* Introduction Section */
+.section-title {
+    font-size: 50px;
+    font-size: 1.5vw;
+    text-align: center;
+    background-color:#84DCC6;
 }
 
 .intro-subtitle {
-    padding-left: 20vh;
-    padding-right: 20vh;
+    padding-left: 13vw;
+    padding-right: 13vw;
+    font-size: 1vw;
+    text-align: center;
+}
+
+.resume-options {
+    text-align: center;
+    list-style: none;
+    margin: 0;
+    padding: 0.5px;
+    font-size: 1.2vw;
+}
+
+.resume-options a{
+    text-decoration: none;
+    font-size: 1vw;
 }
 
 /* Footer Style */
@@ -79,6 +105,8 @@ footer {
     background: #FF686B;
     color: #FFFFFF;
     padding: 10px;
+    text-align: center;
+    font-size: 1.2vw;
 }
 
 footer a {
