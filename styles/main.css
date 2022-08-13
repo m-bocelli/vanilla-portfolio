@@ -1,5 +1,4 @@
 /* Splash Style */
-
 .splash {
     position: fixed;
     z-index: 1;
@@ -39,7 +38,6 @@ h1 {
 }
 
 /* Body and Nav Style */
-
 body {
     background: #FFFFFF;
     margin:  2px;
@@ -67,8 +65,16 @@ nav a {
     color: #FF686B;
 }
 
-/* Footer Style */
+nav a:hover {
+    font-size: larger;
+}
 
+.intro-subtitle {
+    padding-left: 20vh;
+    padding-right: 20vh;
+}
+
+/* Footer Style */
 footer {
     background: #FF686B;
     color: #FFFFFF;
