@@ -23,7 +23,5 @@ window.addEventListener('DOMContentLoaded', ()=>{
         setTimeout(()=>{
             splash.style.top = '-100vh';
         }, 2000)
-
-
     })
 })

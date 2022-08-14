@@ -109,11 +109,14 @@ h2 {
     border: 1px solid white;   
     border-spacing: 5px;
     padding: 10px;
+    max-width: 1000px;
 }
 
 td {
-    background-color: #b9ffee;
+    background-color: #FF686B;
     font-size: 0.8vw;
+    color: #FFFFFF;
+    word-wrap: break-word;
 }
 
 /* Footer Style */
@@ -130,10 +133,8 @@ footer a {
 }
 
 img {
-    border: 3px solid #ddd;
+    border: 2px solid #FFFFFF;
     border-radius: 4px;
-    padding: 2px;
-    width: 300px;
     
     max-width: 100%;
     height: auto;
