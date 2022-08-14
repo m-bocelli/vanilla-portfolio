@@ -74,7 +74,6 @@ h2 {
 
 /* Introduction Section */
 .section-title {
-    font-size: 50px;
     font-size: 1.5vw;
     text-align: center;
     background-color:#84DCC6;
@@ -139,3 +138,13 @@ img {
     max-width: 100%;
     height: auto;
   }
+
+@media (max-width: 600px) {
+    p, .intro-subtitle, td {
+        font-size: 4vw;
+    }
+    img {
+        height: auto;
+        width: auto;
+    }
+}
