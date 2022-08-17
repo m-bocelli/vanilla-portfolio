@@ -49,16 +49,12 @@ body {
 h2 {
     color: #FF686B;
     font-size: 1.7vw;
-    text-align: center;
-}
-
-.nav {
-    text-align: center;
 }
 
 .nav-link {
     margin: 1vw;
     font-size: 1.2vw;
+    font-weight: 600;
     text-decoration: none;
 }
 
@@ -72,45 +68,59 @@ h2 {
     margin-right: 50px;
 }
 
-/* Introduction Section */
 .section-title {
     font-size: 1.5vw;
-    text-align: center;
     background-color:#84DCC6;
 }
 
-.intro-subtitle {
+.section-subtitle {
     padding-left: 13vw;
     padding-right: 13vw;
     font-size: 1vw;
-    text-align: center;
 }
 
-.resume-options {
-    text-align: center;
-    list-style: none;
-    margin: 0;
-    padding: 0.5px;
-    font-size: 1.2vw;
+/* Introduction Section */
+.intro-summary {
+    font-size: 1vw;
 }
 
-.center {
+.intro-table {
     margin-left: auto;
     margin-right: auto;
 }
 
-.project-table, td {
-    border: 1px solid white;   
-    border-spacing: 5px;
-    padding: 10px;
-    max-width: 1000px;
+.intro-table td {
+    background-color: #FFFFFF;
+    color: black;
 }
 
-td {
+/* Resume Download/Viewing Area */
+.resume-options {
+    list-style: none;
+    padding: 0.5px;
+    font-size: 1.2vw;
+}
+
+.center-text {
+    text-align: center;
+}
+
+/* Project Grid */
+.project-table {
+    border: 1px solid white;   
+    border-spacing: 5px;
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;    
+}
+
+.project-table td {
     background-color: #FF686B;
     font-size: 0.8vw;
     color: #FFFFFF;
     word-wrap: break-word;
+    padding: 10px;
+
 }
 
 th {
@@ -122,7 +132,6 @@ footer {
     background: #FF686B;
     color: #FFFFFF;
     padding: 10px;
-    text-align: center;
     font-size: 1.2vw;
 }
 
@@ -130,13 +139,18 @@ footer a {
     color: #FFFFFF;
 }
 
+/* Images */
 img {
     border: 2px solid #FFFFFF;
     border-radius: 4px;
-    
     max-width: 100%;
     height: auto;
   }
+
+.image-description a {
+    color: #FFFFFF;
+    font-size: 1vw;
+}
 
 /* Mobile View */
 @media (max-width: 600px) {
@@ -144,7 +158,7 @@ img {
         margin-left: 15px;
         margin-right: 15px;
     }
-    p, .intro-subtitle, td {
+    .intro-summary, .section-subtitle, p, td {
         font-size: 4vw;
     }
     img {

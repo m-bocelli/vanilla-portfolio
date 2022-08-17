@@ -19,8 +19,8 @@
         </div>
 
         <!--Navigation and header section-->
-        <h2>Computer Science Portfolio</h2>
-        <div class="nav">
+        <h2 class="center-text">Computer Science Portfolio</h2>
+        <div class="nav center-text">
             <p>  
                 <a class="nav-link" href="#home">Home</a>      
                 <a class="nav-link" href="#projects">Projects</a>
@@ -32,38 +32,59 @@
         <div class="content">
             <!--Introduction-->
             <section class="introduction" id="home">
-                <p class="intro-subtitle">
-                    Welcome to my portfolio. I am a 21 year-old computer science student,
-                    studying at the University of Delaware. I believe in blending the creative
-                    with the technical, and I hope you can discover that in my work below.
-                    <ul class="resume-options">
-                        <li>Résumé:</li>
-                        <li><a href="downloads/BocelliResume.pdf" download><b>DOWNLOAD</b></a>
-                            <a href="downloads/BocelliResume.pdf" target="_blank" rel="noopener noreferrer"><b>VIEW</b></a>
-                        </li>
-                    </ul> 
-                </p>   
+                <table class="intro-table">
+                    <tr>
+                        <td>
+                            Pfp
+                        </td>
+                        <td>
+                            <p class="intro-summary center-text">
+                                Welcome to my portfolio. I am a 21 year-old computer science student,
+                                studying at the University of Delaware. I believe in blending the creative
+                                with the technical, and I hope you can discover that in my work below.
+                                <ul class="resume-options center-text">
+                                    <li>Résumé:</li>
+                                    <li><a href="downloads/BocelliResume.pdf" download><b>DOWNLOAD</b></a>
+                                        <a href="downloads/BocelliResume.pdf" target="_blank" rel="noopener noreferrer"><b>VIEW</b></a>
+                                    </li>
+                                </ul> 
+                            </p>  
+                        </td>
+                    </tr>
+                </table>
+                 
             </section>
 
             <!--Project Grid-->
             <section class="project-grid" id="projects">
-                <p class="section-title"><b>Projects</b></p>
-                <p class="intro-subtitle">
-                    A summary of all the projects I have worked on, both academic and personal.
+                <p class="section-title center-text"><b>Projects</b></p>
+                <p class="section-subtitle center-text">
+                    A summary of the projects I have worked on, both academic and personal.
                 </p>
-                <table class="project-table center">
+                <table class="project-table">
                     <tr>
                         <th colspan="2">Boids Simulation (3D)</th>
                     </tr>
                     <tr>
-                        <td><img src="img/boids.PNG"></img></td>
+                        <td>
+                            <img src="img/boids.PNG"></img>
+                            <p class="image-description center-text">
+                                <a href="https://github.com/m-bocelli/Boids-Simulation" target="_blank" rel="noopener noreferrer">SOURCE CODE</a>
+                            </p>
+                        </td>
                         <td>
                             <div class="project-description">
                                 <p>A 3D implementation of the <b>Boids Algorithm</b>, performed by crows in Unity.</p>
-                                Invented by computer graphics expert <b>Craig Reynolds</b>, the boids algorithm simulates the coordinated motion of animals 
-                                such as a flock of birds or a school of fish. I came across the algorithm accidentally while researching the animation techniques 
-                                behind a game called <i>Shadow of the Colossus</i> on an internet forum. After discovering it, I was motivated to implement it 
-                                myself in a 3D game engine environment so I could utilize it for future projects.
+                                <p>
+                                    Invented by computer graphics expert <b>Craig Reynolds</b>, the boids algorithm simulates the coordinated motion of animals 
+                                    such as a flock of birds or a school of fish. I came across the algorithm accidentally while researching the animation techniques 
+                                    behind a game called <i>Shadow of the Colossus</i> on an internet forum. After discovering it, I was motivated to implement it 
+                                    myself in a 3D game engine environment so I could utilize it for future projects.
+                                </p>
+                                <p>
+                                    I also enjoyed this project as I was able to use programming concepts that I learned outside of class, such as delegates and lamda
+                                    expressions.
+                                </p>
                                 <p>Language(s): <b>C#</b></p>
                                 <p>Resources used:</p>
                                 <ul class="project-stats">
@@ -81,11 +102,13 @@
                         <td>ProjectImage2</td>
                         <td>
                             <div class="project-description">
-                                <p> The webpage you are currently viewing, constructed from scratch.</p> My first webpage, besides a <i>Spongebob</i> wiki 
-                                    I made for a class in 9th grade. What I enjoy most about this project is all
+                                <p>The webpage you are currently viewing, constructed from scratch.</p>
+                                <p>
+                                    My first webpage, besides a <i>Spongebob</i> wiki I made for a class in 9th grade. What I enjoy most about this project is all
                                     the extra knowledge which comes as a byproduct while researching HTML and CSS. Although this is true for other projects,
                                     I have not taken a web development course, so while teaching myself the basics I come across interesting features I might
                                     not have otherwise (albeit getting sidetracked at times).
+                                </p> 
                                 <p>Language(s): <b>HTML</b> | <b>CSS</b> | <b>JavaScript</b></p>
                                 <p>Resources used:</p>
                                 <ul class="project-stats">
@@ -99,27 +122,45 @@
                         <th colspan="2">Asteroids</th>
                     </tr>
                     <tr>
-                        <td><img src="img/asteroids.png"></img></td>
-                        <td>ProjectSummary3</td>
+                        <td><img src="img/asteroids.png"></img>
+                            <p class="image-description center-text">
+                                <a href="https://github.com/m-bocelli/Asteroids-in-Python" target="_blank" rel="noopener noreferrer">SOURCE CODE</a>
+                            </p>
+                        </td>
+                        <td>
+                            <div class="project-description">
+                                <p>A recreation of the 1979 Atari classic <i>Asteroids</i>, made with the Designer library.</p>
+                                <p>
+                                    This was my first final in my first computer science class in college. We had the option to choose between recreating
+                                    <i>Snake</i> and <i>Asteroids</i> as our final project, both of which needed to be created from scratch. I was told that 
+                                    <i>Asteroids</i> would be the tougher choice, so of course I chose it. The library used (Designer) was created by one of
+                                    our faculty's professors and was very enjoyable to work with when putting this project together.
+                                </p>
+                                <p>Language(s): <b>Python</b>
+                                <p>Resources used:</p>
+                                <ul class="project-stats">
+                                    <li>https://github.com/krishols/designer</li>
+                                </ul>
+                            </div>
+                        </td>
                     </tr>
                 </table>
             </section>
 
             <!--3D Artwork-->
             <section class="3D-section" id="3D">
-                <p class="section-title"><b>3D Assets</b></p>
-                <p class="intro-subtitle">3D Art Area</p>
+                <p class="section-title center-text"><b>3D Assets</b></p>
+                <p class="section-subtitle center-text">3D Art Area</p>
             </section>
 
             <!--About Me-->
             <section class="about-section" id="about">
-                <p class="section-title"><b>About Me</b></p>
-                <p class="intro-subtitle">List Skills/Hobbies/Etc</p>
+                <p class="section-title center-text"><b>About Me</b></p>
+                <p class="section-subtitle center-text">List Skills/Hobbies/Etc</p>
             </section>
-
         </div>
 
-        <footer>
+        <footer class="center-text">
             Email: michael.j.bocelli@gmail.com |
             <a href="https://github.com/m-bocelli" target="_blank" rel="noopener noreferrer">GitHub</a> 
             | 
