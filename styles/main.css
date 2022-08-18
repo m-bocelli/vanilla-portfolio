@@ -85,13 +85,18 @@ h2 {
 }
 
 .intro-table {
-    margin-left: 25%;
-    margin-right: 25%;
+    table-layout: fixed;
+    margin-left: auto;
+    margin-right: auto;
+    border: 1px solid black;
+    border-collapse: collapse;
+    width: 50vw;
 }
 
 .intro-table td {
     background-color: #FFFFFF;
     color: black;
+    border: 1px solid black;
 }
 
 /* Resume Download/Viewing Area */
@@ -136,7 +141,7 @@ footer {
     background: #FF686B;
     color: #FFFFFF;
     padding: 10px;
-    font-size: 21px;
+    font-size: 18px;
 }
 
 footer a {
@@ -156,6 +161,19 @@ img {
     font-size: 21px;
 }
 
+@media (min-width: 1000px) {
+    .intro-table {
+        max-width: 800px;
+    }
+    
+}
+
+@media (max-width: 1200px) {
+    .intro-table {
+        min-width: 620px;
+    }
+}
+
 /* Mobile View */
 @media (max-width: 600px) {
     .content {
@@ -172,12 +190,16 @@ img {
     }
 
     .intro-table {
-        margin-left: auto;
-        margin-right: auto;
+        width: 95%;
+        min-width: auto;
     }
 
     .intro-summary, .section-summary, p, td, footer {
         font-size: 16px;
+    }
+
+    .intro-summary {
+        margin-right: 0%;
     }
 
     .section-title {
