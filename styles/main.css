@@ -48,12 +48,12 @@ body {
 /* Nav and Header Style */
 h2 {
     color: #FF686B;
-    font-size: 1.7vw;
+    font-size: 34px;
 }
 
 .nav-link {
     margin: 1vw;
-    font-size: 1.2vw;
+    font-size: 21px;
     font-weight: 600;
     text-decoration: none;
 }
@@ -69,24 +69,24 @@ h2 {
 }
 
 .section-title {
-    font-size: 1.5vw;
+    font-size: 28px;
     background-color:#84DCC6;
 }
 
-.section-subtitle {
+.section-summary {
     padding-left: 13vw;
     padding-right: 13vw;
-    font-size: 1vw;
+    font-size: 21px;
 }
 
 /* Introduction Section */
 .intro-summary {
-    font-size: 1vw;
+    font-size: 21px;
 }
 
 .intro-table {
-    margin-left: auto;
-    margin-right: auto;
+    margin-left: 25%;
+    margin-right: 25%;
 }
 
 .intro-table td {
@@ -98,7 +98,8 @@ h2 {
 .resume-options {
     list-style: none;
     padding: 0.5px;
-    font-size: 1.2vw;
+    font-size: 21px;
+    margin-bottom: 0;
 }
 
 .center-text {
@@ -111,20 +112,23 @@ h2 {
     border-spacing: 5px;
     max-width: 1000px;
     margin-left: auto;
-    margin-right: auto;    
+    margin-right: auto;
 }
 
 .project-table td {
     background-color: #FF686B;
-    font-size: 0.8vw;
+    font-size: 16px;
     color: #FFFFFF;
     word-wrap: break-word;
     padding: 10px;
+}
 
+.project-stats {
+    font-size: 16px;
 }
 
 th {
-    font-size: 1.2vw;
+    font-size: 21px;
 }
 
 /* Footer Style */
@@ -132,7 +136,7 @@ footer {
     background: #FF686B;
     color: #FFFFFF;
     padding: 10px;
-    font-size: 1.2vw;
+    font-size: 21px;
 }
 
 footer a {
@@ -149,7 +153,7 @@ img {
 
 .image-description a {
     color: #FFFFFF;
-    font-size: 1vw;
+    font-size: 21px;
 }
 
 /* Mobile View */
@@ -158,30 +162,34 @@ img {
         margin-left: 15px;
         margin-right: 15px;
     }
-    .intro-summary, .section-subtitle, p, td {
-        font-size: 4vw;
+
+    h2 {
+        font-size: 30px;
     }
+
+    .resume-options, .nav-link, th {
+        font-size: 21px;
+    }
+
+    .intro-table {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .intro-summary, .section-summary, p, td, footer {
+        font-size: 16px;
+    }
+
+    .section-title {
+        font-size: 25px;
+    }
+
+    .project-table td {
+        max-width: 250px;
+    }
+        
     img {
         height: auto;
         width: auto;
-    }
-    .nav-link, .resume-options {
-        font-size: 4.2vw;
-    }
-    .section-title {
-        font-size: 4.5vw;
-    }
-    h2 {
-        font-size: 5vw;
-    }
-    footer {
-        font-size: 3vw;
-    }
-    .project-table, td {
-        max-width: fit-content;
-        font-size: small;
-    }
-    th {
-        font-size: 4vw;
     }
 }
