@@ -1,6 +1,201 @@
 /* General style elements */
+body {
+    min-width: 325px;
+    background: #FFFFFF;
+    font-family: 'Inconsolata', monospace;
+    font-size: 16px;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+}
 
-/* Splash Style */
+.center-text {
+    text-align: center;
+}
+
+/* Nav and Header Style */
+h2.title {
+    color: #FF686B;
+    font-size: 2.1rem;
+    padding-top: 10px;
+}
+
+a.nav-link {
+    margin: 0.7rem;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+a.nav-link:hover {
+    color: #84DCC6;
+}
+
+/* All Content below Nav */
+div.content {
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+p.section-summary, ul.resume-options {
+    font-size: 1.125rem;
+}
+
+a.nav-link, th, p.image-description a {
+    font-size: 1.375rem;
+}
+
+a.nav-link, ul.resume-options a {
+    color: #551A8B;
+}
+
+p.section-title {
+    font-size: 28px;
+    background-color:#84DCC6;
+}
+
+p.section-summary {
+    padding-left: 13vw;
+    padding-right: 13vw;
+}
+
+/* Introduction Section */
+table.intro-table {
+    table-layout: fixed;
+    font-size: 1rem;
+    margin-left: auto;
+    margin-right: auto;
+    border-collapse: collapse;
+    width: 50vw;
+    max-width: 700px;
+}
+
+table.intro-table td {
+    background-color: #FFFFFF;
+    color: black;
+}
+
+p.intro-summary {
+    padding-left: 10px;
+}
+
+td.headshot {
+    border-right: 3px solid #84DCC6;
+}
+
+/* Resume Download/Viewing Area */
+ul.resume-options {
+    list-style: none;
+    padding: 0.5px;
+    margin-bottom: 0;
+}
+
+/* Project Grid */
+table.project-table {
+    border: 1px solid white;   
+    border-spacing: 5px;
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+table.project-table td {
+    background-color: #FF686B;
+    font-size: 16px;
+    color: #FFFFFF;
+    word-wrap: break-word;
+    padding: 10px;
+}
+
+ul.project-stats {
+    font-size: 16px;
+}
+
+/* Footer Style */
+footer {
+    background: #FF686B;
+    color: #FFFFFF;
+    padding: 10px;
+    font-size: 18px;
+}
+
+footer a {
+    color: #FFFFFF;
+}
+
+/* Images */
+img {
+    border: 2px solid #FFFFFF;
+    border-radius: 4px;
+    max-width: 100%;
+    height: auto;
+  }
+
+p.image-description a {
+    color: #FFFFFF;
+}
+
+/* Mobile View */
+@media (max-width: 600px) {
+    .content {
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+    h2.title {
+        font-size: 30px;
+    }
+
+    ul.resume-options, 
+    a.nav-link, 
+    th {
+        font-size: 21px;
+    }
+
+    div.nav {
+        padding-bottom: 20px;
+    }
+
+    table.intro-table {
+        width: auto;
+        text-align: center;
+    }
+
+    p.section-summary, 
+    p, 
+    td, 
+    footer, 
+    p.intro-summary {
+        font-size: 1rem;
+    }
+
+    p.intro-summary {
+        padding-left: 0;
+        margin-left: 15px;
+        margin-right: 15px;
+        margin-bottom: 0;
+    }
+
+    td.headshot {
+        padding-bottom: 16px;
+        border-right: none;
+        border-bottom: 3px solid #84DCC6;
+    }
+
+    p.section-title {
+        font-size: 25px;
+    }
+    
+    td {
+        display: block;
+    }
+
+    img {
+        height: auto;
+        width: auto;
+    }
+}
+
+/* Splash screem style */
 .splash {
     width: 100%;
     height: 100vh;
@@ -49,171 +244,4 @@
 .landing-button a{
     color: #FFFFFF;
     text-decoration: underline;
-}
-
-/* Body Style */
-body {
-    min-width: 325px;
-    background: #FFFFFF;
-    font-family: 'Inconsolata', monospace;
-    justify-content: center;
-    align-items: center;
-    margin: 0;
-}
-
-/* Nav and Header Style */
-h2 {
-    color: #FF686B;
-    font-size: 34px;
-    padding-top: 10px;
-}
-
-.section-summary, .resume-options {
-    font-size: 18px;
-}
-
-.nav-link, th, .image-description a {
-    font-size: 21px;
-}
-
-.nav-link {
-    margin: 0.7rem;
-    font-weight: 600;
-    text-decoration: none;
-}
-
-.nav-link, .resume-options a {
-    color: #551A8B;
-}
-
-.nav-link:hover {
-    color: #84DCC6;
-}
-
-/* All Content below Nav */
-.content {
-    margin-left: 15px;
-    margin-right: 15px;
-}
-
-.section-title {
-    font-size: 28px;
-    background-color:#84DCC6;
-}
-
-.section-summary {
-    padding-left: 13vw;
-    padding-right: 13vw;
-}
-
-/* Introduction Section */
-
-.intro-table {
-    table-layout: fixed;
-    margin-left: auto;
-    margin-right: auto;
-    border-collapse: collapse;
-    width: 50vw;
-    max-width: 700px;
-}
-
-.intro-table td {
-    background-color: #FFFFFF;
-    color: black;
-}
-
-/* Resume Download/Viewing Area */
-.resume-options {
-    list-style: none;
-    padding: 0.5px;
-    margin-bottom: 0;
-}
-
-.center-text {
-    text-align: center;
-}
-
-/* Project Grid */
-.project-table {
-    border: 1px solid white;   
-    border-spacing: 5px;
-    max-width: 1000px;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-.project-table td {
-    background-color: #FF686B;
-    font-size: 16px;
-    color: #FFFFFF;
-    word-wrap: break-word;
-    padding: 10px;
-}
-
-.project-stats {
-    font-size: 16px;
-}
-
-/* Footer Style */
-footer {
-    background: #FF686B;
-    color: #FFFFFF;
-    padding: 10px;
-    font-size: 18px;
-}
-
-footer a {
-    color: #FFFFFF;
-}
-
-/* Images */
-img {
-    border: 2px solid #FFFFFF;
-    border-radius: 4px;
-    max-width: 100%;
-    height: auto;
-  }
-
-.image-description a {
-    color: #FFFFFF;
-}
-
-/* Mobile View */
-@media (max-width: 600px) {
-    .content {
-        margin-left: 10px;
-        margin-right: 10px;
-    }
-
-    h2 {
-        font-size: 30px;
-    }
-
-    .resume-options, .nav-link, th {
-        font-size: 21px;
-    }
-    .nav {
-        padding-bottom: 20px;
-    }
-    .intro-table {
-        width: auto;
-        text-align: center;
-    }
-
-    .section-summary, p, td, footer {
-        font-size: 16px;
-    }
-
-    .section-title {
-        font-size: 25px;
-    }
-    
-    td {
-        display: block;
-    }
-
-    img {
-        height: auto;
-        width: auto;
-    }
 }

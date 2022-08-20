@@ -12,4 +12,4 @@ window.addEventListener('DOMContentLoaded', ()=>{
             buttonElement.classList.add('active');
         }, delayTime)
     }, delayTime);
-})
+});
