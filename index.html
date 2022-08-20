@@ -12,14 +12,15 @@
 
     <body>
         <!--Splash Screen-->
-        <div class="splash">
-            <h1>
-                <span class="name">Michael</span> <span class="name"> Bocelli</span>
+        <div class="splash" id="home">
+            <h1 class="splash-text">
+                <span class="name">Michael Bocelli.</span>
+                <span class="landing-button"><a href="#landing">Go to portfolio.</a></span>
             </h1>
         </div>
 
         <!--Navigation and header section-->
-        <h2 class="center-text">Computer Science Portfolio</h2>
+        <h2 class="center-text" id="landing">Computer Science Portfolio</h2>
         <div class="nav center-text">
             <p>  
                 <a class="nav-link" href="#home">Home</a>      
@@ -31,14 +32,14 @@
 
         <div class="content">
             <!--Introduction-->
-            <section class="introduction" id="home">
+            <section class="introduction">
                 <table class="intro-table">
                     <tr>
-                        <td style="text-align: right; padding-right: 15px;">
+                        <td>
                             Michael Bocelli
                         </td>
                         <td>
-                            <p style="padding-left: 15px;">
+                            <p>
                                 Welcome to my portfolio. I am a 21 year-old computer science student,
                                 studying at the University of Delaware. I believe in blending the creative
                                 with the technical, and I hope you can discover that in my work below.
@@ -167,16 +168,16 @@
                 <p class="section-title center-text"><b>About Me</b></p>
                 <p class="section-summary center-text">List Skills/Hobbies/Etc</p>
             </section>
+
+            <footer class="center-text">
+                Email: michael.j.bocelli@gmail.com |
+                <a href="https://github.com/m-bocelli" target="_blank" rel="noopener noreferrer">GitHub</a> 
+                | 
+                <a href="https://www.linkedin.com/in/michael-bocelli/" target="_blank" rel="noopener noreferrer">LinkedIn</a>      
+            </footer> 
         </div>
 
-        <footer class="center-text">
-            Email: michael.j.bocelli@gmail.com |
-            <a href="https://github.com/m-bocelli" target="_blank" rel="noopener noreferrer">GitHub</a> 
-            | 
-            <a href="https://www.linkedin.com/in/michael-bocelli/" target="_blank" rel="noopener noreferrer">LinkedIn</a>      
-        </footer> 
-
         <!--Splash Screen Anim.-->
-        <script src="scripts/animate.js"></script>
+        <script src="scripts/animateSplash.js"></script>
     </body>
 </html>

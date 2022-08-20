@@ -1,40 +1,54 @@
+/* General style elements */
+
 /* Splash Style */
 .splash {
-    position: fixed;
-    z-index: 1;
-    left: 0;
-    top: 0;
     width: 100%;
     height: 100vh;
-    background-color: #84DCC6;
+    background: #84DCC6;
     transition: 1s;
 }
 
-h1 {
+.splash-text {
     position: absolute;
     top: 40%;
     left: 50%;
     color: #FFFFFF;
-    transform: translate(-50%, -50%)
+    transform: translate(-50%, -50%); /*Center splash span elements*/
 }
 
 .name {
     position: relative;
     display: inline-block;
-    bottom: -20px;
+    font-size: 40px;
     opacity: 0;
+    left: -90px; /*Starting distance for animation*/
+}
+
+.landing-button {
+    position: relative;
+    display: inline-block;
+    bottom: -50px;
+    font-size: 30px;
+    opacity: 0;
+    right: -90px; /*Starting distance for animation*/
 }
 
 .name.active {
-    bottom: 0;
+    left: 0px;
+}
+
+.landing-button.active {
+    right: 0px;
+}
+
+.name.active, .landing-button.active {
     opacity: 1;
     transition: ease-in-out 0.5s;
 }
 
-.name.fade {
-    bottom: 150px;
-    opacity: 0;
-    transition: ease-in-out 0.5s;
+.landing-button a{
+    color: #FFFFFF;
+    text-decoration: underline;
 }
 
 /* Body Style */
@@ -44,12 +58,14 @@ body {
     font-family: 'Inconsolata', monospace;
     justify-content: center;
     align-items: center;
+    margin: 0;
 }
 
 /* Nav and Header Style */
 h2 {
     color: #FF686B;
     font-size: 34px;
+    padding-top: 10px;
 }
 
 .section-summary, .resume-options {
@@ -64,7 +80,10 @@ h2 {
     margin: 0.7rem;
     font-weight: 600;
     text-decoration: none;
-    text-shadow: none;
+}
+
+.nav-link, .resume-options a {
+    color: #551A8B;
 }
 
 .nav-link:hover {
@@ -73,8 +92,8 @@ h2 {
 
 /* All Content below Nav */
 .content {
-    margin-left: 50px;
-    margin-right: 50px;
+    margin-left: 15px;
+    margin-right: 15px;
 }
 
 .section-title {
@@ -162,8 +181,8 @@ img {
 /* Mobile View */
 @media (max-width: 600px) {
     .content {
-        margin-left: 15px;
-        margin-right: 15px;
+        margin-left: 10px;
+        margin-right: 10px;
     }
 
     h2 {
@@ -173,13 +192,15 @@ img {
     .resume-options, .nav-link, th {
         font-size: 21px;
     }
-
+    .nav {
+        padding-bottom: 20px;
+    }
     .intro-table {
-        justify-content: center;
-        align-items: center;
+        width: auto;
+        text-align: center;
     }
 
-    .intro-summary, .section-summary, p, td, footer {
+    .section-summary, p, td, footer {
         font-size: 16px;
     }
 
