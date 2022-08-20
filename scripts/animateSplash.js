@@ -6,7 +6,7 @@ window.addEventListener('DOMContentLoaded', ()=>{
     let delayTime = 200;
 
     setTimeout(()=>{
-        /*Name is brought onto screen first*/
+        /* Name is brought onto screen first */
         nameElement.classList.add('active');
         setTimeout(()=>{
             buttonElement.classList.add('active');

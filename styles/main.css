@@ -44,12 +44,12 @@ a.nav-link, th, p.image-description a {
     font-size: 1.375rem;
 }
 
-a.nav-link, ul.resume-options a {
+a.nav-link, a.back-to-top, ul.resume-options a {
     color: #551A8B;
 }
 
 p.section-title {
-    font-size: 28px;
+    font-size: 1.75rem;
     background-color:#84DCC6;
 }
 
@@ -60,11 +60,11 @@ p.section-summary {
 
 /* Introduction Section */
 table.intro-table {
-    table-layout: fixed;
-    font-size: 1rem;
     margin-left: auto;
     margin-right: auto;
+    table-layout: fixed;
     border-collapse: collapse;
+
     width: 50vw;
     max-width: 700px;
 }
@@ -85,29 +85,28 @@ td.headshot {
 /* Resume Download/Viewing Area */
 ul.resume-options {
     list-style: none;
-    padding: 0.5px;
+    padding: 0.1px;
     margin-bottom: 0;
 }
 
 /* Project Grid */
-table.project-table {
-    border: 1px solid white;   
-    border-spacing: 5px;
-    max-width: 1000px;
+table.project-table, table.art-table {
     margin-left: auto;
     margin-right: auto;
+   
+    border-spacing: 5px;
+    max-width: 1000px;
 }
 
 table.project-table td {
     background-color: #FF686B;
-    font-size: 16px;
     color: #FFFFFF;
-    word-wrap: break-word;
+
     padding: 10px;
 }
 
-ul.project-stats {
-    font-size: 16px;
+table.art-table {
+    border: 3px solid black;
 }
 
 /* Footer Style */
@@ -142,17 +141,12 @@ p.image-description a {
     }
 
     h2.title {
-        font-size: 30px;
+        font-size: 1.875rem;
     }
-
-    ul.resume-options, 
+ 
     a.nav-link, 
     th {
-        font-size: 21px;
-    }
-
-    div.nav {
-        padding-bottom: 20px;
+        font-size: 1.375rem;
     }
 
     table.intro-table {
@@ -161,10 +155,11 @@ p.image-description a {
     }
 
     p.section-summary, 
+    p.intro-summary,
+    ul.resume-options,
     p, 
     td, 
-    footer, 
-    p.intro-summary {
+    footer {
         font-size: 1rem;
     }
 
@@ -182,7 +177,7 @@ p.image-description a {
     }
 
     p.section-title {
-        font-size: 25px;
+        font-size: 1.625rem;
     }
     
     td {
@@ -214,7 +209,7 @@ p.image-description a {
 .name {
     position: relative;
     display: inline-block;
-    font-size: 40px;
+    font-size: 2.5rem;
     opacity: 0;
     left: -90px; /*Starting distance for animation*/
 }
@@ -223,7 +218,7 @@ p.image-description a {
     position: relative;
     display: inline-block;
     bottom: -50px;
-    font-size: 30px;
+    font-size: 1.875rem;
     opacity: 0;
     right: -90px; /*Starting distance for animation*/
 }

@@ -13,6 +13,7 @@
         <!--Splash Screen-->
         <div class="splash" id="home">
             <h1 class="splash-text">
+                <!--Using span instead of p since I think the offset looks interesting-->
                 <span class="name">Michael Bocelli.</span>
                 <span class="landing-button"><a href="#landing">Go to portfolio.</a></span>
             </h1>
@@ -155,18 +156,55 @@
                         </td>
                     </tr>
                 </table>
+                <p class="center-text"><a class="back-to-top" href="#landing"><b>back to top</b></a></p>
             </section>
 
             <!--3D Artwork-->
             <section class="3D-section" id="3D">
                 <p class="section-title center-text"><b>3D Assets</b></p>
-                <p class="section-summary center-text">3D Art Area</p>
+                <p class="section-summary center-text">
+                    I began teaching myself Blender during quarantine and have explored different art styles for game development.
+                </p>
+                <table class="art-table">
+                    <tr>
+                        <td>
+                            <model-viewer src="downloads/firstchar.glb" ar ar-modes="webxr scene-viewer quick-look" camera-controls poster="poster.webp" shadow-intensity="1" autoplay> </model-viewer>
+                        </td>
+                        <td>
+                            <p>The first humanoid I modeled, rigged, and textured in Blender. I kept it simple and went for a poly count 
+                                circa PS1/2 era, influenced by Wander, the main protagonist of <i>Shadow of the Colossus</i> (2005).</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <model-viewer src="downloads/firstchar.glb" ar ar-modes="webxr scene-viewer quick-look" camera-controls poster="poster.webp" shadow-intensity="1" autoplay> </model-viewer>
+                        </td>
+                        <td>
+                            <p>The second humanoid I modeled and rigged in Blender. This model is a WIP, and will be used in an upcoming 
+                                project; design inspired by Link from <i>The Legend of Zelda</i>.</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <video width="320" height="240" controls><source src="video/oceananim.mp4" type="video/mp4"></video>
+                        </td>
+                        <td>
+                            <p>This animation was created for a CHEM103 final project, and demonstrates hydrogen bonds constantly forming and breaking
+                                amongst water molecules. Everything from the ocean to the molecules was modeled from scratch. (Unfortunately there is a
+                                lighting artifact bug during the zoom-in as a result of rendering on my, relatively, old GPU).
+                            </p>
+                        </td>
+                    </tr>
+                </table>
+                
+                <p class="center-text"><a class="back-to-top" href="#landing"><b>back to top</b></a></p>
             </section>
 
             <!--About Me-->
             <section class="about-section" id="about">
                 <p class="section-title center-text"><b>About Me</b></p>
                 <p class="section-summary center-text">List Skills/Hobbies/Etc</p>
+                <p class="center-text"><a class="back-to-top" href="#landing"><b>back to top</b></a></p>
             </section>
 
             <footer class="center-text">
@@ -180,5 +218,6 @@
         <!--Splash Screen Anim.-->
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
         <script src="scripts/animateSplash.js"></script>
+        <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
     </body>
 </html>
