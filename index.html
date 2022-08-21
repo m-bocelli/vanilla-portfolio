@@ -163,36 +163,49 @@
             <section class="3D-section" id="3D">
                 <p class="section-title center-text"><b>3D Assets</b></p>
                 <p class="section-summary center-text">
-                    I began teaching myself Blender during quarantine and have explored different art styles for game development.
+                    A collection of 3D art I have designed after teaching myself Blender, exploring different styles for game development.
                 </p>
                 <table class="art-table">
                     <tr>
-                        <td>
-                            <model-viewer src="downloads/firstchar.glb" ar ar-modes="webxr scene-viewer quick-look" camera-controls poster="poster.webp" shadow-intensity="1" autoplay> </model-viewer>
+                        <td class="center-text">
+                            <model-viewer src="models/firstchar.glb" ar ar-modes="webxr scene-viewer quick-look" camera-controls poster="poster.webp" shadow-intensity="1" autoplay></model-viewer>
                         </td>
                         <td>
-                            <p>The first humanoid I modeled, rigged, and textured in Blender. I kept it simple and went for a poly count 
-                                circa PS1/2 era, influenced by Wander, the main protagonist of <i>Shadow of the Colossus</i> (2005).</p>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <model-viewer src="downloads/firstchar.glb" ar ar-modes="webxr scene-viewer quick-look" camera-controls poster="poster.webp" shadow-intensity="1" autoplay> </model-viewer>
-                        </td>
-                        <td>
-                            <p>The second humanoid I modeled and rigged in Blender. This model is a WIP, and will be used in an upcoming 
-                                project; design inspired by Link from <i>The Legend of Zelda</i>.</p>
+                            <div class="art-description center-text">
+                                <p>The first humanoid I modeled, rigged, and textured in Blender. I kept it simple and went for a poly count 
+                                    circa PS1/2 era, influenced by Wander, the main protagonist of <i>Shadow of the Colossus</i> (2005).
+                                </p>
+                                <p><a href="downloads/firstchar.blend" download>Blender file.</a></p>
+                            </div>
                         </td>
                     </tr>
                     <tr>
-                        <td>
-                            <video width="320" height="240" controls><source src="video/oceananim.mp4" type="video/mp4"></video>
+                        <td class="center-text">
+                            WIP
                         </td>
                         <td>
-                            <p>This animation was created for a CHEM103 final project, and demonstrates hydrogen bonds constantly forming and breaking
-                                amongst water molecules. Everything from the ocean to the molecules was modeled from scratch. (Unfortunately there is a
-                                lighting artifact bug during the zoom-in as a result of rendering on my, relatively, old GPU).
-                            </p>
+                            <div class="art-description center-text">
+                                <p>The second humanoid I modeled and rigged in Blender. This model is a WIP, and will be used in an upcoming 
+                                    project; design inspired by Link from <i>The Legend of Zelda</i>.
+                                </p>
+                                <p><a href="downloads/ElfKnight.blend" download>Blender file.</a></p>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="center-text">
+                            <video controls><source src="video/oceananim.mp4" type="video/mp4"></video>
+                        </td>
+                        <td>
+                            <div class="art-description center-text">
+                                <p>This animation was created for a CHEM103 final project, and demonstrates hydrogen bonds constantly forming and breaking
+                                    amongst water molecules. Everything from the ocean to the molecules was modeled from scratch and is the composition
+                                    of two different renders. Unfortunately, there is a lighting artifact bug during the zoom-in as a result of rendering 
+                                    on my, relatively, old GPU.
+                                </p>
+                                <p><a href="downloads/ocean.blend">Ocean Blender file.</a></p>
+                                <p><a href="downloads/molecules.blend">Molecules Blender file.</a></p>
+                            </div>
                         </td>
                     </tr>
                 </table>
@@ -203,7 +216,37 @@
             <!--About Me-->
             <section class="about-section" id="about">
                 <p class="section-title center-text"><b>About Me</b></p>
-                <p class="section-summary center-text">List Skills/Hobbies/Etc</p>
+                <p class="section-summary center-text">A succint summary of who I am and what I do.</p>
+                <table class="about-table">
+                    <tr>
+                        <td class="about-header"><p><b>Skills</b></p></td>
+                        <td>
+                            <p>Languages studied:</p>
+                            <ul>
+                                <li>Python</li>
+                                <li>C</li>
+                                <li>Java</li>
+                                <li>C#</li>
+                                <li>HTML/CSS</li>
+                            </ul>
+                            <p>8+ Years of German language experience</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="about-header"><p><b>Hobbies/Interests</b></p></td>
+                        <td>
+                            <p>
+                                Besides programming, I thoroughly enjoy exercising (specifically weightlifting) and love developing
+                                plans and tracking progress. I have even personally trained my friend, who has now seen incredible results
+                                in just a few months.
+                            </p>
+                            <p>
+                                Further hobbies include 3D modelling, as seen above, and game design.
+                            </p>
+                        </td>
+                    </tr>
+                </table>
+
                 <p class="center-text"><a class="back-to-top" href="#landing"><b>back to top</b></a></p>
             </section>
 

@@ -40,7 +40,7 @@ p.section-summary, ul.resume-options {
     font-size: 1.125rem;
 }
 
-a.nav-link, th, p.image-description a {
+a.nav-link, th, p.image-description a, td.about-header {
     font-size: 1.375rem;
 }
 
@@ -90,7 +90,7 @@ ul.resume-options {
 }
 
 /* Project Grid */
-table.project-table, table.art-table {
+table.project-table, table.art-table, table.about-table {
     margin-left: auto;
     margin-right: auto;
    
@@ -105,8 +105,21 @@ table.project-table td {
     padding: 10px;
 }
 
-table.art-table {
-    border: 3px solid black;
+table.art-table, table.art-table td{
+    border: 5px solid #FF686B;
+    border-collapse: collapse;
+    padding: 10px;
+}
+
+table.about-table, table.about-table td {
+    border-collapse: collapse;
+    padding: 10px;
+}
+
+td.about-header {
+    vertical-align: text-top;
+    text-align: right;
+    border-right: 3px solid #84DCC6;
 }
 
 /* Footer Style */
@@ -133,6 +146,12 @@ p.image-description a {
     color: #FFFFFF;
 }
 
+/* Video */
+video {
+    height: 197px;
+    width: 350px;
+}
+
 /* Mobile View */
 @media (max-width: 600px) {
     .content {
@@ -145,7 +164,7 @@ p.image-description a {
     }
  
     a.nav-link, 
-    th {
+    th, td.about-header {
         font-size: 1.375rem;
     }
 
@@ -170,7 +189,7 @@ p.image-description a {
         margin-bottom: 0;
     }
 
-    td.headshot {
+    td.headshot, td.about-header {
         padding-bottom: 16px;
         border-right: none;
         border-bottom: 3px solid #84DCC6;
@@ -178,6 +197,10 @@ p.image-description a {
 
     p.section-title {
         font-size: 1.625rem;
+    }
+
+    td.about-header {
+        text-align: center;
     }
     
     td {
