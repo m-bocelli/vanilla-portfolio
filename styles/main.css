@@ -1,4 +1,8 @@
 /* General style elements */
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     min-width: 325px;
     background: #FFFFFF;
